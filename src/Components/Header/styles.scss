@@ -1,0 +1,135 @@
+.header {
+    width: 100%;
+    background-color: #1C1A1A;
+    &__navbar{
+
+        &__navLinks{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            flex-wrap: wrap;
+            &__brand{
+                margin: 0px 81px 0px 72px;
+                &__logo{
+
+
+                }
+            }
+
+            &__ul{
+
+                &__li{
+                    list-style: none;
+                    &__item{
+                        color: #FFFFFF;
+                        font-size: 22px;
+                        text-decoration: none;
+                        margin-right: 63px;
+                    }
+                }
+            }
+        }
+        &__login{
+            color: white;
+            margin-left: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &__user_img{
+                margin-right: 16px;
+            }
+            &__user_img:hover {
+                cursor: pointer;
+            }
+            &__login_button{
+                margin-right: 70px;
+                font-weight: normal;
+                font-size: 18px;
+                border: 1px solid #14CFFF;
+                box-sizing: border-box;
+                border-radius: 7px;
+                height: 75%;
+                &__button_text{
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    width: 90px;
+                  //  display: flex;
+                    justify-content: center;
+                }
+            }
+            &__login_button:hover {
+                cursor: pointer;
+                background: #404040;
+            }
+        }
+    }
+}
+nav{
+    display: flex;
+}
+.active{
+    color: white;
+    font-weight: bold;
+}
+@media (max-width: 550px) {
+    .logo {
+        margin-top: 20px;
+    }
+
+    .header {
+        &__navbar{
+            flex-wrap: wrap;
+            &__navLinks{
+                width: 100%;
+                justify-content: center;
+                &__brand{
+                    
+                    &__logo{
+                        
+                        a {
+                            justify-content: center;
+                        }
+                    }    
+                }
+                &__ul{
+                    display: flex;
+                    width: 70%;
+                    padding: 0;
+    
+                    &__li{
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        padding: 0;
+                        &__item{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            &__login{
+                height: 60px;
+                justify-content: center;
+                width: 100%;
+                margin-bottom: 10px;
+                margin-left: 0;
+                &__user_img:hover {
+                    cursor: pointer;
+                }
+                &__login_button {
+                    margin-right: 0;
+                    &__button_text{
+
+                    }
+                }
+                &__login_button:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    
+    }
+}

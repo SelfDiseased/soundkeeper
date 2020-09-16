@@ -1,0 +1,12 @@
+.main_container {
+    width: 83vw;
+    height: 56.25vh;
+    margin: auto;
+    margin-top: 6vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    @media (max-width: 550px) {
+        flex-direction: column;
+    }
+}

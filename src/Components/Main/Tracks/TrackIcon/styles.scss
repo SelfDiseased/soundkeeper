@@ -1,0 +1,10 @@
+.track_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__music_icon {
+        display: flex;
+        position: absolute;
+    }
+}

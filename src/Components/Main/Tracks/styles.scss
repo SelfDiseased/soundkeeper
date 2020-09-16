@@ -1,0 +1,123 @@
+$track_elements_padding: 2.68%;
+.tracks_block {
+    width: 55.8%;
+    @media (max-width: 550px) {
+        width: 100%;
+    }
+}
+
+
+
+.tracks_heading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 27%;
+    text-align: center;
+}
+
+.tracks_container {
+    overflow-y: scroll;
+    max-height: 83%;
+}
+
+.track_active {
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    background: #ebebe0;
+    cursor: pointer;
+}
+
+.track {
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    cursor: pointer;
+
+    &__play_button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: auto 0;
+        padding-left: $track_elements_padding;
+        img {
+            width: inherit;
+            height: inherit;
+        }
+    }
+    
+    &__image_container {
+        width: 68.5px;
+        height: 68.5px;
+        border-radius: 50%;
+        margin: auto 0;
+        padding-left: $track_elements_padding;
+        img {
+            width: inherit;
+            height: inherit;
+            border-radius: 50%;
+        }
+    }
+    
+    &__data {
+        width: auto;
+        height: 45px;
+        margin: auto 0;
+        padding-left: $track_elements_padding;
+    
+        &__name {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            margin: 0;
+        }
+    
+        &__artist {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: lighter;
+            font-size: 18px;
+            line-height: 22px;
+            margin: 0;
+            color: rgba(0, 0, 0, 0.6);
+        }
+    }
+    
+    &__duration {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+        color: rgba(0, 0, 0, 0.6);
+        margin: auto 0;
+        margin-left: auto;
+        padding-right: $track_elements_padding;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+
+/* Optional: show position indicator in red */
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
